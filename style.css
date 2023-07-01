@@ -1,0 +1,116 @@
+html {
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* FORMS */
+
+#forms {
+  background-color: rgb(185, 185, 185);
+  text-align: left;
+  padding: .5em 2em;
+  margin: 0;
+}
+
+label {
+  padding: 2em;
+}
+
+input {
+  border: none;
+  border-radius: 2px;
+  width: 99%;
+  clear: both;
+  padding: .5em 0;
+  margin: .5em;
+}
+
+#button {
+  text-align: right;
+}
+
+#submit {
+  background-color: dodgerblue;
+  color: white;
+  width: auto;
+  border-radius: 3px;
+  padding: .3em;
+}
+
+#submit:hover {
+  background-color: rgb(18, 115, 211);
+  cursor: pointer;
+}
+
+/* MEMES */
+
+#memeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 450px;
+  height: auto;
+}
+
+.meme {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-text,
+.bottom-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 100%;
+}
+
+.top-text {
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+.bottom-text {
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.delete-button {
+  background-color: crimson;
+  opacity: 60%;
+  padding: .5em;
+  display: none;
+}
+
+.meme:hover .delete-button {
+  display: block;
+}
